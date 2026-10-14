@@ -1,11 +1,43 @@
 # Credit Card Fraud Detection System Using Machine Learning
-
+**This is an educational prototype, not a production banking system.**
 ## Project Overview
 This project is a machine learning-based credit card fraud detection system developed using Python, Scikit-learn, and Streamlit.
 
 The system analyzes historical credit card transactions and predicts whether a transaction is legitimate or potentially fraudulent.
+Google Gemini API Integration
+The project includes a Google Gemini API integration to enhance the fraud detection dashboard with generative AI capabilities.
 
-**This is an educational prototype, not a production banking system.**
+While the machine learning models perform fraud classification, Gemini is designed to act as an AI Fraud Analysis Assistant that provides understandable explanations of prediction results.
+
+Purpose
+
+The integration aims to:
+
+Make fraud detection results easier to understand.
+
+Explain the relationship between fraud scores and classification thresholds.
+
+Provide suggestions for manual transaction verification.
+
+Demonstrate the combination of traditional machine learning and generative AI.
+
+How the Integration Works
+
+The user selects a transaction in the Streamlit dashboard.
+
+The selected machine learning model generates a fraud score and predicted class.
+
+The user clicks the Explain Fraud Prediction button.
+
+The application sends the model name, transaction amount, fraud score, classification threshold, and prediction to the Gemini API.
+
+Gemini is expected to generate a natural-language explanation.
+
+The explanation is displayed in the Streamlit dashboard when the API request succeeds.
+
+The integration does not require sending the complete credit card dataset to Gemini.
+
+
 
 ## Technologies Used
 - Python
@@ -15,6 +47,7 @@ The system analyzes historical credit card transactions and predicts whether a t
 - Streamlit
 - Joblib
 - Visual Studio Code
+-Google Gemini API
 
 ## Machine Learning Models
 1. Logistic Regression
